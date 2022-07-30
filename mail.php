@@ -1,6 +1,5 @@
 <?php
 
-
 $email = $_POST['emailaddress'];
 $message = $_POST['message'];
 
