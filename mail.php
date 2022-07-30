@@ -1,4 +1,19 @@
-<!DOCTYPE html>
+<?php
+
+
+$email = $_POST['emailaddress'];
+$message = $_POST['message'];
+
+
+$mailheader = "From: ".$email."<".$message.">\r\n";
+
+$recipient = "manjyeelk@gmail.com";
+
+mail($recipient, $email, $message, $mailheader)
+or die("Something is wrong with the server. Try again!");
+
+
+echo'<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -53,65 +68,37 @@
         <!--Left Col-->
         <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
           <h1 class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
-            Hi
+            Your
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
-              there,
+              Message
             </span>
-            I am Manjyeel!
+            Has been sent!
           </h1>
+          <br><br>
           <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
-            This is my portfolio site.. Feel free to roam around.
+            this was quick right? just some php : )
           </p>
+          <br><br>
 
-          <form action="mail.php" method="POST" class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-8">
+          <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-8">
             <div class="mb-4">
-              <label class="block text-blue-300 py-2 font-bold mb-2" for="emailaddress">
-                Woohaa. want to send me a DM?
-              </label>
-              <input
-                class="shadow appearance-none border rounded  w-full p-3 bg-gray-900 text-white-900 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                id="emailaddress"
-                type="text"
-                placeholder="you@emaildomain.com"/>
-              <br>
-              <input
-                class="shadow appearance-none border rounded  w-full p-10 bg-gray-900 text-white-900 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                id="message"
-                type="text"
-                placeholder="Your message for me"
-              />
-            </div>
+             
             <div class="flex items-center justify-between pt-1">
               <button
                 class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 type="button">
-                Send!
+                Get me back to the landing page
               </button>
             </div>
           </form>
         </div>
-        <!--Right Col-->
-        <div class="w-full xl:w-3/5 p-12 overflow-hidden">
-          <img class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" src="macbook1.svg" />
-        </div>
-        <div class="mx-auto md:pt-16">
-          <p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center">
-            <button
-            class="align-content:center; bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-5 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-            type="button">
-            <a href="projects.html">Browse My Projects!</a>
-          </button>
-          </p>
-          <div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
-            <a href="https://www.youtube.com/watch?v=1bkTxRPdr1M">
-            <img src="App Store.svg" class="h-12 pr-12 transform hover:scale-125 duration-300 ease-in-out" />
-            </a>
-            <a href="https://play.google.com/store/apps/developer?id=ManJyeel">
-            <img src="Play Store.svg" class="h-12 transform hover:scale-125 duration-300 ease-in-out"/>
-            </a>
-          </div>
-        </div>
-
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br><br><br>
         <!--Footer-->
         <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
           <a class="text-gray-500 no-underline hover:no-underline" href="#">&copy; Manjyeel 2022</a>
@@ -122,3 +109,8 @@
     </div>
   </body>
 </html>
+';
+
+
+
+?>
