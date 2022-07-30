@@ -1,24 +1,10 @@
-<?php
-
-$email = $_POST['emailaddress'];
-$message = $_POST['message'];
-
-
-$mailheader = "From: ".$email."<".$message.">\r\n";
-
-$recipient = "manjyeelk@gmail.com";
-
-mail($recipient, $email, $message, $mailheader)
-or die("Something is wrong with the server. Try again!");
-
-
-echo'<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Manjyeel Khatiwada</title>
+    <title>Contact</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -67,37 +53,119 @@ echo'<!DOCTYPE html>
         <!--Left Col-->
         <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
           <h1 class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
-            Your
+            So you are here to
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
-              Message
+              Send me a message
             </span>
-            Has been sent!
+            right?
           </h1>
           <br><br>
           <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
-            this was quick right? just some php : )
+            I will reply as soon as possible : )
           </p>
-          <br><br>
-
           <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-8">
-            <div class="mb-4">
-             
-            <div class="flex items-center justify-between pt-1">
-              <button
-                class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                type="button">
-                Get me back to the landing page
-              </button>
-            </div>
-          </form>
+              <form method="POST" action="https://herotofu.com/start">
+                <label class="block mb-5">
+                  <span class="text-gray-300">Your name</span>
+                  <input
+                    name="name"
+                    type="text"
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-600
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                      bg-transparent
+                      placeholder-gray-600
+                      text-gray-300
+                    "
+                    placeholder="John Doe"
+                  />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-gray-300">Email address</span>
+                  <input
+                    name="email"
+                    type="email"
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-600
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                      bg-transparent
+                      placeholder-gray-600
+                      text-gray-300
+                    "
+                    placeholder="johdoe@example.com"
+                    required
+                  />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-gray-300">Message</span>
+                  <textarea
+                    name="message"
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-600
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                      bg-transparent
+                      placeholder-gray-600
+                      text-gray-300
+                    "
+                    rows="3"
+                    placeholder="Type in the message here..."
+                  ></textarea>
+                </label>
+                <div class="mb-6">
+                  <button
+                    type="submit"
+                    class="
+                      h-10
+                      px-5
+                      text-indigo-100
+                      bg-indigo-700
+                      rounded-lg
+                      transition-colors
+                      duration-150
+                      focus:shadow-outline
+                      hover:bg-indigo-800
+                    "
+                  >
+                    Send
+                  </button>
+                </div>
+                <div>
+                  <div class="mt-2 text-gray-300 text-right text-xs">
+                    powered by
+                    <a href="https://gmail.com" class="hover:underline" target="_blank"
+                      >gmail</a
+                    >
+                  </form>
+                  </div>
+                </div>
+              </form>
+          </div>
         </div>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br><br><br>
+      
         <!--Footer-->
         <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
           <a class="text-gray-500 no-underline hover:no-underline" href="#">&copy; Manjyeel 2022</a>
@@ -108,8 +176,3 @@ echo'<!DOCTYPE html>
     </div>
   </body>
 </html>
-';
-
-
-
-?>
