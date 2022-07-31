@@ -63,110 +63,35 @@
           <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
             I will reply as soon as possible : )
           </p>
-          <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-8">
-            <form action="https://public.herotofu.com/v1/ec341a80-1027-11ed-a9ac-1bde1534b8d2" method="post">
-                <label class="block mb-5">
-                  <span class="text-gray-300">Your name</span>
-                  <input
-                    name="name"
-                    type="text"
-                    class="
-                      block
-                      w-full
-                      mt-1
-                      border-gray-600
-                      rounded-md
-                      shadow-sm
-                      focus:border-indigo-300
-                      focus:ring
-                      focus:ring-indigo-200
-                      focus:ring-opacity-50
-                      bg-transparent
-                      placeholder-gray-600
-                      text-gray-300
-                    "
-                    placeholder="John Doe"
-                  />
-                </label>
-                <label class="block mb-6">
-                  <span class="text-gray-300">Email address</span>
-                  <input
-                    name="email"
-                    type="email"
-                    class="
-                      block
-                      w-full
-                      mt-1
-                      border-gray-600
-                      rounded-md
-                      shadow-sm
-                      focus:border-indigo-300
-                      focus:ring
-                      focus:ring-indigo-200
-                      focus:ring-opacity-50
-                      bg-transparent
-                      placeholder-gray-600
-                      text-gray-300
-                    "
-                    placeholder="johdoe@example.com"
-                    required
-                  />
-                </label>
-                <label class="block mb-6">
-                  <span class="text-gray-300">Message</span>
-                  <textarea
-                    name="message"
-                    class="
-                      block
-                      w-full
-                      mt-1
-                      border-gray-600
-                      rounded-md
-                      shadow-sm
-                      focus:border-indigo-300
-                      focus:ring
-                      focus:ring-indigo-200
-                      focus:ring-opacity-50
-                      bg-transparent
-                      placeholder-gray-600
-                      text-gray-300
-                    "
-                    rows="3"
-                    placeholder="Type in the message here..."
-                  ></textarea>
-                </label>
-                <div class="mb-6">
-                  <button
-                    type="submit"
-                    class="
-                      h-10
-                      px-5
-                      text-indigo-100
-                      bg-indigo-700
-                      rounded-lg
-                      transition-colors
-                      duration-150
-                      focus:shadow-outline
-                      hover:bg-indigo-800
-                    "
-                  >
-                    Send
-                  </button>
-                </div>
-                <div>
-                  <div class="mt-2 text-gray-300 text-right text-xs">
-                    powered by
-                    <a href="https://gmail.com" class="hover:underline" target="_blank"
-                      >gmail</a
-                    >
-                  </form>
-                  </div>
-                </div>
-              </form>
+
+          <!--Form-->
+          <form action="https://public.herotofu.com/v1/ec341a80-1027-11ed-a9ac-1bde1534b8d2" method="post" class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-8">
+            <!--Name-->
+            <div>
+              <label for="name" class="block mb-6">
+                <span class="text-gray-300">Name</span>
+              <input name="Name" id="name" type="text"  class="
+              block w-full mt-1 border-gray-600 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-transparent placeholder-gray-600 text-gray-300" placeholder="John Doe" required />
+              </label>
+            </div>
+            <!--Email-->
+            <div>
+              <label for="email" class="block mb-6">
+                <span class="text-gray-300">Email</span>
+              <input name="Email" id="email" type="email"  class="
+              block w-full mt-1 border-gray-600 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-transparent placeholder-gray-600 text-gray-300"  placeholder="johdoe@example.com" required  />
+            </div>
+            <!--Submit-->
+            <div>
+              <input type="submit" value="Submit" class="h-10 px-5 text-indigo-100 bg-indigo-700 rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800">
+            </label>
+            </div>
+          </form>
           </div>
         </div>
-      
         <!--Footer-->
+        <br>
+        <br><br><br><br>
         <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
           <a class="text-gray-500 no-underline hover:no-underline" href="#">&copy; Manjyeel 2022</a>
           - Website By
